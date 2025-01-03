@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+  	\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}tikzpicture\PYG{n+nb}{\PYGZcb{}}[fill=white]
+		\PYG{k}{\PYGZbs{}path} (4,4) node(a)[ellipse,draw,fill,rotate=10]\PYG{n+nb}{\PYGZob{}}Miskat\PYG{n+nb}{\PYGZcb{}}
+		(3,3) node(b) [rectangle, draw,fill,rotate=\PYGZhy{}10]\PYG{n+nb}{\PYGZob{}}Fedora\PYG{n+nb}{\PYGZcb{}}
+		(6,3) node(c) [rectangle,draw,fill]\PYG{n+nb}{\PYGZob{}}NixOS\PYG{n+nb}{\PYGZcb{}}
+		(4.5,2) node(d) [rectangle,draw,fill]\PYG{n+nb}{\PYGZob{}}Arch\PYG{n+nb}{\PYGZcb{}};
+		\PYG{k}{\PYGZbs{}draw} (a.south) \PYGZhy{}\PYGZhy{} (b);
+		\PYG{k}{\PYGZbs{}draw} (a.east) \PYGZhy{}\PYGZhy{} (c);
+		\PYG{k}{\PYGZbs{}draw} [blue,\PYGZhy{}\PYGZgt{}](a.north) |\PYGZhy{}(2,5) \PYGZhy{}\PYGZhy{} (2,2) .. controls (2,0) and (4,0) .. (d.south);
+	\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}tikzpicture\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

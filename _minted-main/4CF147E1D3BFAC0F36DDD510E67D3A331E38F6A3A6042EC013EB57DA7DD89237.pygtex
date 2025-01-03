@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}tikzpicture\PYG{n+nb}{\PYGZcb{}}
+		\PYG{k}{\PYGZbs{}clip} (\PYGZhy{}2,\PYGZhy{}2) rectangle (2,2);
+		\PYG{k}{\PYGZbs{}draw} [name path=curve 1] (\PYGZhy{}2,\PYGZhy{}1) .. controls (8,\PYGZhy{}1) and (\PYGZhy{}8,1) .. (2,1);
+		\PYG{k}{\PYGZbs{}draw} [name path=curve 2] (\PYGZhy{}1,\PYGZhy{}2) .. controls (\PYGZhy{}1,8) and (1,\PYGZhy{}8) .. (1,2);
+		\PYG{k}{\PYGZbs{}fill} [name intersections=\PYG{n+nb}{\PYGZob{}}of=curve 1 and curve 2, name=i, total=\PYG{k}{\PYGZbs{}t}\PYG{n+nb}{\PYGZcb{}}]
+		[red, opacity=0.5, every node/.style=\PYG{n+nb}{\PYGZob{}}above left, black, opacity=1\PYG{n+nb}{\PYGZcb{}}]
+		\PYG{k}{\PYGZbs{}foreach} \PYG{k}{\PYGZbs{}s} in \PYG{n+nb}{\PYGZob{}}1,...,\PYG{k}{\PYGZbs{}t}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}(i\PYGZhy{}\PYG{k}{\PYGZbs{}s}) circle (2pt) node \PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}footnotesize\PYGZbs{}s}\PYG{n+nb}{\PYGZcb{}\PYGZcb{}};
+	\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}tikzpicture\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

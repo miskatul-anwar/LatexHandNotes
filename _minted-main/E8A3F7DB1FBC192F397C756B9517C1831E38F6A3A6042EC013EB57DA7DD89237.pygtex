@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}tikzpicture\PYG{n+nb}{\PYGZcb{}}[fill=black]
+		\PYG{k}{\PYGZbs{}path} (0,0) node(c)[circle, draw,fill, label=below:c]\PYG{n+nb}{\PYGZob{}\PYGZcb{}}
+		(0,3) node(a)[circle,draw,fill, label=left:a]\PYG{n+nb}{\PYGZob{}\PYGZcb{}}
+		(3,3) node(b)[circle,draw,fill, label=right:b]\PYG{n+nb}{\PYGZob{}\PYGZcb{}};
+		\PYG{k}{\PYGZbs{}draw}\PYG{n+na}{[thick,black,\PYGZhy{}\PYGZgt{}, bend left=20]} (a) to (b);
+		\PYG{k}{\PYGZbs{}draw}\PYG{n+na}{[thick,black,\PYGZhy{}\PYGZgt{}, bend left=20]} (b) to (a);
+		\PYG{k}{\PYGZbs{}draw}\PYG{n+na}{[thick,black,\PYGZhy{}\PYGZgt{}, bend left=20]} (b) to (a);
+		\PYG{k}{\PYGZbs{}draw}\PYG{n+na}{[thick,black,\PYGZhy{}\PYGZgt{}, bend right=20]} (a) to (c);
+		\PYG{k}{\PYGZbs{}draw}\PYG{n+na}{[thick,black,\PYGZhy{}\PYGZgt{}, bend right=20]} (c) to (a);
+		\PYG{k}{\PYGZbs{}draw}\PYG{n+na}{[thick,black,\PYGZhy{}\PYGZgt{}, bend right=20]} (c) to (b);
+		\PYG{k}{\PYGZbs{}draw}\PYG{n+na}{[thick,black,\PYGZhy{}\PYGZgt{}, bend right=20]} (b) to (c);
+		\PYG{k}{\PYGZbs{}draw}\PYG{n+na}{[thick,black,\PYGZhy{}\PYGZgt{}, loop above]} (a) to (a);
+		\PYG{k}{\PYGZbs{}draw}\PYG{n+na}{[thick,black,\PYGZhy{}\PYGZgt{}, loop above]} (b) to (b);
+		\PYG{k}{\PYGZbs{}draw}\PYG{n+na}{[thick,black,\PYGZhy{}\PYGZgt{}, loop left]} (c) to (c);
+	
+ \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}tikzpicture\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

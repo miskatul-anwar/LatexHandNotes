@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}tikzpicture\PYG{n+nb}{\PYGZcb{}}[fill=white]
+		\PYG{k}{\PYGZbs{}path} (0,1.5) node(a)[circle,draw,fill]\PYG{n+nb}{\PYGZob{}}A\PYG{n+nb}{\PYGZcb{}}
+		(2,3) node(b)[circle,draw,fill]\PYG{n+nb}{\PYGZob{}}B\PYG{n+nb}{\PYGZcb{}}
+		(2,1.5)node(c)[circle,draw,fill]\PYG{n+nb}{\PYGZob{}}C\PYG{n+nb}{\PYGZcb{}}
+		(2,0)node(d)[circle,draw,fill]\PYG{n+nb}{\PYGZob{}}D\PYG{n+nb}{\PYGZcb{}}
+		(3.5,\PYGZhy{}1) node(e)[circle,draw,fill]\PYG{n+nb}{\PYGZob{}}E\PYG{n+nb}{\PYGZcb{}}
+		(3.5,1) node(f)[circle,draw,fill]\PYG{n+nb}{\PYGZob{}}F\PYG{n+nb}{\PYGZcb{}};
+		\PYG{k}{\PYGZbs{}draw} [thick,black,\PYGZhy{}\PYGZgt{}] (a) to (b);
+		\PYG{k}{\PYGZbs{}draw} [thick,black,\PYGZhy{}\PYGZgt{}] (a) to (c);
+		\PYG{k}{\PYGZbs{}draw} [thick,black,\PYGZhy{}\PYGZgt{}] (a) to (d);
+		\PYG{k}{\PYGZbs{}draw} [thick,black,\PYGZhy{}\PYGZgt{}] (d) to (e) ;
+		\PYG{k}{\PYGZbs{}draw} [thick,black,\PYGZhy{}\PYGZgt{}] (d) to (f);
+	\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}tikzpicture\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}
